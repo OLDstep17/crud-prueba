@@ -22,7 +22,7 @@ WORKDIR /app
 COPY --from=builder /app/target/*.jar app.jar
 
 # Puerto por defecto de Spring Boot
-EXPOSE 8082
+EXPOSE 8083
 
 # Ejecutar la app
 ENTRYPOINT ["java","-jar","app.jar"]
